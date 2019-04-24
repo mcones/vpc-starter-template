@@ -78,67 +78,67 @@ Outputs:
     Description: VPC Id
     Value: !Ref Vpc
     Export:
-      Name: !Sub "${AWS::StackName}-VpcId"
+      Name: vpc-id
 
   PublicRouteTableId:
     Description: Route Table for public subnets
     Value: !Ref PublicRouteTable
     Export:
-      Name: !Sub "${AWS::StackName}-public-rtb"
+      Name: "public-rtb"
 
   PublicAZASubnetId:
     Description: Availability Zone A public subnet Id
     Value: !Ref PublicAZASubnet
     Export:
-      Name: !Sub "${AWS::StackName}-public-AZ-A-subnet"
+      Name: "public-az-a-subnet"
 
   PublicAZBSubnetId:
     Description: Availability Zone B public subnet Id
     Value: !Ref PublicAZBSubnet
     Export:
-      Name: !Sub "${AWS::StackName}-public-AZ-B-subnet"
+      Name: "public-az-b-subnet"
 
   PublicAZCSubnetId:
     Description: Availability Zone C public subnet Id
     Value: !Ref PublicAZCSubnet
     Export:
-      Name: !Sub "${AWS::StackName}-public-AZ-C-subnet"
+      Name: "public-az-c-subnet"
 
   PrivateAZASubnetId:
     Description: Availability Zone A private subnet Id
     Value: !Ref PrivateAZASubnet
     Export:
-      Name: !Sub "${AWS::StackName}-private-AZ-A-subnet"
+      Name: "private-az-a-subnet"
 
   PrivateAZBSubnetId:
     Description: Availability Zone B private subnet Id
     Value: !Ref PrivateAZBSubnet
     Export:
-      Name: !Sub "${AWS::StackName}-private-AZ-B-subnet"
+      Name: "private-az-b-subnet"
 
   PrivateAZCSubnetId:
     Description: Availability Zone C private subnet Id
     Value: !Ref PrivateAZCSubnet
     Export:
-      Name: !Sub "${AWS::StackName}-private-AZ-C-subnet"
+      Name: "private-az-C-subnet"
 
   PrivateAZARouteTableId:
     Description: Route table for private subnets in AZ A
     Value: !Ref PrivateAZARouteTable
     Export:
-      Name: !Sub "${AWS::StackName}-private-AZ-A-rtb"
+      Name: "private-az-a-rtb"
 
   PrivateAZBRouteTableId:
     Description: Route table for private subnets in AZ B
     Value: !Ref PrivateAZBRouteTable
     Export:
-      Name: !Sub "${AWS::StackName}-private-AZ-B-rtb"
+      Name: "private-az-b-rtb"
 
   PrivateAZCRouteTableId:
     Description: Route table for private subnets in AZ C
     Value: !Ref PrivateAZCRouteTable
     Export:
-      Name: !Sub "${AWS::StackName}-private-AZ-C-rtb"
+      Name: private-az-c-rtb
 
 Resources:
   Vpc:
